@@ -63,7 +63,7 @@ namespace Game.Scripts.UI.UIMenuWindow
             foreach (var (i, tabItem, instance) in TabsPool.Change(Owner.ArtService.TabItems))
             {
                 instance.Bind(this);
-                instance.Fill(i, i == _selectedTabIndex, Owner.ArtService.GetTitle(tabItem.TitleKey), tabItem.Filter);
+                instance.Fill(i, i == _selectedTabIndex, i != Owner.ArtService.TabItems.Count - 1, Owner.ArtService.GetTitle(tabItem.TitleKey), tabItem.Filter);
             }
 
             int count = Owner.ArtService.Count;

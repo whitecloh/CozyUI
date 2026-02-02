@@ -15,6 +15,7 @@ namespace Game.Scripts.UI.UIMenuWindow
 
         [SerializeField] private GameObject selectedRoot;
         [SerializeField] private GameObject unselectedRoot;
+        [SerializeField] private GameObject separator;
         
         public ArtTabFilter Filter { get; private set; }
         
@@ -30,13 +31,15 @@ namespace Game.Scripts.UI.UIMenuWindow
             button.onClick.RemoveListener(UI_Select);
         }
 
-        public void Fill(int index, bool isSelected, string titleKey, ArtTabFilter filter)
+        public void Fill(int index, bool isSelected, bool isSeparatorNeeded, string titleKey, ArtTabFilter filter)
         {
             _index = index;
             Filter = filter;
 
             titleText.text = titleKey;
-
+            
+            separator.SetActive(isSeparatorNeeded);
+            
             SetSelected(isSelected);
         }
 
