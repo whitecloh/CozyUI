@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f97083307e494f936d558b777d25c8, type: 3}
+  m_Name: BannersData
+  m_EditorClassIdentifier: 
+  items:
+  - type: 0
+    prefab: {fileID: 4718939642333851258, guid: 78d9bf6da9ec9fe479075eefb05f4f80, type: 3}
+  - type: 1
+    prefab: {fileID: 1252580462227101924, guid: 4f13dbf11b1da94458b9458f4feead53, type: 3}
+  - type: 2
+    prefab: {fileID: 6587208686579832333, guid: f80e0ded582eee04295af6fd1094d409, type: 3}
